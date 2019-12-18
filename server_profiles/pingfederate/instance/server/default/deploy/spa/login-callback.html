@@ -2,7 +2,7 @@
 
 	<head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<base href="https:///brand1.pingid-fedid.bbldtl.int/"/>
+		<base href="https:///brand1.pingapac.com/"/>
                 <script src="https://cdn.rawgit.com/GluuFederation/openid-implicit-client/master/openidconnect.js">
                 </script>
   <link rel="stylesheet" href="/spa/css/foundation.css">
@@ -30,7 +30,7 @@ function getParameterByName(name) {
 			access_token = getParameterByName("access_token");
 			var id_token = getParameterByName("id_token");
 
-                        var providerInfo = OIDC.discover('https://brand1.pingid-fedid.bbldtl.int');
+                        var providerInfo = OIDC.discover('https://brand1.pingapac.com');
                         OIDC.setProviderInfo( providerInfo );
                         OIDC.storeInfo(providerInfo);
 
@@ -65,7 +65,6 @@ function getParameterByName(name) {
   </div>
 
   <div class="checkout-summary-item">
-    <img src="http://waverleyhc.org.au/wp-content/uploads/2017/06/Bendigo-Bank-sponsor.png" width=100>
     <div class="item-name">
       <a>Savings Account</a>
     </div>

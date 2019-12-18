@@ -11,7 +11,7 @@ pf-oauth-client-grant-type: implicit
 pf-oauth-client-last-modified: 1575501840043
 pf-oauth-client-name: bankapp-spa
 pf-oauth-client-persistent-grant-exp-type: SERVER_DEFAULT
-pf-oauth-client-redirect-uri: https://brand1.pingid-fedid.bbldtl.int/spa/log
+pf-oauth-client-redirect-uri: https://brand1.pingapac.com/spa/log
  in-callback.html
 pf-oauth-client-require-signed-requests: FALSE
 pf-oauth-client-restrict-scopes: FALSE
@@ -54,7 +54,7 @@ pf-oauth-client-grant-type: implicit
 pf-oauth-client-last-modified: 1575501731927
 pf-oauth-client-name: bankapp-spa2
 pf-oauth-client-persistent-grant-exp-type: SERVER_DEFAULT
-pf-oauth-client-redirect-uri: https://brand2.pingid-fedid.bbldtl.int/spa2/lo
+pf-oauth-client-redirect-uri: https://brand2.pingapac.com/spa2/lo
  gin-callback.html
 pf-oauth-client-require-signed-requests: FALSE
 pf-oauth-client-restrict-scopes: FALSE

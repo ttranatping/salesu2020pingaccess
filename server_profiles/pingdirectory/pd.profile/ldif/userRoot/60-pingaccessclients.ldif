@@ -13,7 +13,7 @@ pf-oauth-client-hashed-secret: v-KtZCoyJNT705cUGencKXpBvxngKdRAHoIqZQjSOTA.K
 pf-oauth-client-last-modified: 1575518868619
 pf-oauth-client-name: pingaccess_brand1_web
 pf-oauth-client-persistent-grant-exp-type: SERVER_DEFAULT
-pf-oauth-client-redirect-uri: https://brand1.pingid-fedid.bbldtl.int/*
+pf-oauth-client-redirect-uri: https://brand1.pingapac.com/*
 pf-oauth-client-require-signed-requests: FALSE
 pf-oauth-client-restrict-scopes: FALSE
 pf-oauth-client-supplemental-info: 22:ALLOW_EXCLUSIVE_SCOPES:false

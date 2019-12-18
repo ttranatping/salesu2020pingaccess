@@ -45,5 +45,5 @@
     <urn:ReuseExistingPersistentGrantForGrant>authorization_code</urn:ReuseExistingPersistentGrantForGrant>
     <urn:persistentGrantAttributes AttributeName="APPROVED_SCOPES"/>
     <urn:persistentGrantAttributes AttributeName="SELECTED_ACCOUNTS"/>
-    <urn:allowedOrigins>https://test.pingid-fedid.bbldtl.int</urn:allowedOrigins>
+    <urn:allowedOrigins>https://dir.pingapac.com</urn:allowedOrigins>
 </urn:OAuthConfig>

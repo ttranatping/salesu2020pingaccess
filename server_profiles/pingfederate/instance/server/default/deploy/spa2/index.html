@@ -10,9 +10,9 @@
         <script>
             var clientInfo = {
                 client_id : 'bankapp-spa2',
-                redirect_uri : 'https://brand2.pingid-fedid.bbldtl.int/spa2/login-callback.html'
+                redirect_uri : 'https://brand2.pingapac.com/spa2/login-callback.html'
             };
-            var providerInfo = OIDC.discover('https://brand2.pingid-fedid.bbldtl.int');
+            var providerInfo = OIDC.discover('https://brand2.pingapac.com');
             OIDC.setClientInfo( clientInfo );
             OIDC.setProviderInfo( providerInfo );
             OIDC.storeInfo(providerInfo, clientInfo);

@@ -9,7 +9,7 @@ pf-oauth-client-grant-type: implicit
 pf-oauth-client-last-modified: 1575158922030
 pf-oauth-client-name: PingDirectory Admin Delegater App
 pf-oauth-client-persistent-grant-exp-type: SERVER_DEFAULT
-pf-oauth-client-redirect-uri: https://test.pingid-fedid.bbldtl.int/*
+pf-oauth-client-redirect-uri: https://dir.pingapac.com/*
 pf-oauth-client-require-signed-requests: FALSE
 pf-oauth-client-restrict-scopes: FALSE
 pf-oauth-client-supplemental-info: 22:ALLOW_EXCLUSIVE_SCOPES:true

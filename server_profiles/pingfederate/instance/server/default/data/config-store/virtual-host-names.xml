@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:config xmlns:con="http://www.sourceid.org/2004/05/config">
     <con:list name="domain-names">
-        <con:ListItem>sso-admin.pingid-fedid.bbldtl.int</con:ListItem>
-        <con:ListItem>brand1.pingid-fedid.bbldtl.int</con:ListItem>
-        <con:ListItem>brand2.pingid-fedid.bbldtl.int</con:ListItem>
-        <con:ListItem>sso.pingid-fedid.bbldtl.int</con:ListItem>
+        <con:ListItem>sso-admin.pingapac.com</con:ListItem>
+        <con:ListItem>brand1.pingapac.com</con:ListItem>
+        <con:ListItem>brand2.pingapac.com</con:ListItem>
+        <con:ListItem>sso.pingapac.com</con:ListItem>
     </con:list>
 </con:config>
