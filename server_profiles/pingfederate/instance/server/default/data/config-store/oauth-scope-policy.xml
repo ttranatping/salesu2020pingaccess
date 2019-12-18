@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:config xmlns:con="http://www.sourceid.org/2004/05/config">
+    <con:map name="scope-descriptions">
+        <con:item name="address">View my address</con:item>
+        <con:item name="phone">View my phone</con:item>
+        <con:item name="openid">OpenID Connect</con:item>
+        <con:item name="offline_access">Offline access</con:item>
+        <con:item name="profile">View my profile</con:item>
+        <con:item name="email">View my email</con:item>
+    </con:map>
+    <con:item name="lastUpdated">1575184754330</con:item>
+    <con:map name="scope-group-descriptions"/>
+    <con:map name="scope-group-mappings"/>
+    <con:list name="dynamic-common-scopes"/>
+    <con:map name="exclusive-scope-descriptions">
+        <con:item name="bank:accounts.basic:read">bank:accounts.basic:read</con:item>
+        <con:item name="bank:accounts.detail:read">bank:accounts.detail:read</con:item>
+        <con:item name="bank:payees:read">bank:payees:read</con:item>
+        <con:item name="urn:pingidentity:directory-delegated-admin">urn:pingidentity:directory-delegated-admin</con:item>
+        <con:item name="bank:transactions:read">bank:transactions:read</con:item>
+        <con:item name="common:customer.detail:read">common:customer.detail:read</con:item>
+        <con:item name="cdr:registration">cdr:registration</con:item>
+        <con:item name="common:customer.basic:read">common:customer.basic:read</con:item>
+        <con:item name="bank:regular_payments:read">bank:regular_payments:read</con:item>
+    </con:map>
+    <con:map name="exclusive-scope-group-descriptions"/>
+    <con:map name="exclusive-scope-group-mappings"/>
+    <con:list name="dynamic-exclusive-scopes"/>
+</con:config>

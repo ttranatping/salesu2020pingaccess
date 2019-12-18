@@ -1,0 +1,162 @@
+dn: uid=user.0,ou=People,${USER_BASE_DN}
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: Brooke
+cn: Raeann Brooke
+givenName: Raeann
+uid: user.0
+userPassword: password
+pf-connected-identity: auth-source=pf-local-identity:user-id=user.0
+
+dn: uid=user.1,ou=People,${USER_BASE_DN}
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: Seawell
+cn: Esko Seawell
+givenName: Esko
+uid: user.1
+userPassword: password
+pf-connected-identity: auth-source=pf-local-identity:user-id=user.1
+
+dn: uid=user.2,ou=People,${USER_BASE_DN}
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: Tancordo
+cn: Sidonia Tancordo
+givenName: Sidonia
+uid: user.2
+userPassword: password
+pf-connected-identity: auth-source=pf-local-identity:user-id=user.2
+
+dn: uid=user.3,ou=People,${USER_BASE_DN}
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: Knio
+cn: Pierre-Marc Knio
+givenName: Pierre-Marc
+uid: user.3
+userPassword: password
+pf-connected-identity: auth-source=pf-local-identity:user-id=user.3
+
+dn: uid=user.4,ou=People,${USER_BASE_DN}
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: Psutka
+cn: Terza Psutka
+givenName: Terza
+uid: user.4
+userPassword: password
+pf-connected-identity: auth-source=pf-local-identity:user-id=user.4
+
+dn: uid=administrator,ou=People,${USER_BASE_DN}
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: PingFederate
+cn: Administrator
+givenName: PingFederate
+uid: administrator
+userPassword: 2FederateM0re
+pf-connected-identity: auth-source=pf-local-identity:user-id=administrator
+
+dn: uid=access2federate,ou=People,${USER_BASE_DN}
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: PingAccess
+cn: pingFederateAdministrator
+givenName: PingAccess
+uid: access2federate
+userPassword: 2FederateM0re
+pf-connected-identity: auth-source=pf-local-identity:user-id=access2federate
+
+
+dn: uid=auditor,ou=People,${USER_BASE_DN}
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: PingFederate
+cn: Auditor
+givenName: PingFederate
+uid: auditor
+userPassword: 2FederateM0re
+pf-connected-identity: auth-source=pf-local-identity:user-id=auditor
+
+dn: uid=TA0001,ou=People,${USER_BASE_DN}
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: Andrews
+cn: Tim Andrews
+givenName: Tim
+uid: TA0001
+mobile: +61417505965
+userPassword: 2FederateM0re
+pf-connected-identity: auth-source=pf-local-identity:user-id=TA0001
+
+dn: uid=PW0001,ou=People,${USER_BASE_DN}
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: Winters
+cn: Paul Winters
+givenName: Paul
+uid: PW0001
+mobile: +61438133445
+userPassword: 2FederateM0re
+pf-connected-identity: auth-source=pf-local-identity:user-id=PW0001
+
+dn: uid=PD0001,ou=People,${USER_BASE_DN}
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: Dang
+cn: Peter Dang
+givenName: Peter
+uid: PD0001
+mobile: +61414387498
+userPassword: 2FederateM0re
+pf-connected-identity: auth-source=pf-local-identity:user-id=PD0001
+
+dn: uid=TT0001,ou=People,${USER_BASE_DN}
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: Tran
+cn: Tam Tran
+givenName: Tam
+mobile: +61412167942
+uid: TT0001
+userPassword: 2FederateM0re
+pf-connected-identity: auth-source=pf-local-identity:user-id=PD0001
+
+
