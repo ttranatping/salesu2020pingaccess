@@ -1,6 +1,6 @@
 dsconfig set-trust-manager-provider-prop --provider-name "Blind Trust" --set enabled:true
 
-dsconfig create-external-server --server-name PingFederate --type http --set base-url:https://pf-engine-loadbalancer:9031 --set hostname-verification-method:allow-all --set key-manager-provider:Null --set "trust-manager-provider:Blind Trust"
+dsconfig create-external-server --server-name PingFederate --type http --set base-url:${PINGFEDERATE_BACKCHANNEL_HOST} --set hostname-verification-method:allow-all --set key-manager-provider:Null --set "trust-manager-provider:Blind Trust"
 dsconfig create-access-token-validator --validator-name AdminJWKSValidator --type jwt --set "identity-mapper:Exact Match" --set enabled:true --set authorization-server:PingFederate --set jwks-endpoint-path:https://pf-engine-loadbalancer:9031/ext/AdminJWKS
 
 dsconfig set-consent-service-prop --set unprivileged-consent-scope:pingdirectory:unprivileged --set privileged-consent-scope:pingdirectory:privileged
