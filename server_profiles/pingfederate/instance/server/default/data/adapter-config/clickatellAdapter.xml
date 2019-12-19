@@ -4,7 +4,9 @@
         <urn:Field name="Allowed Attempts">3</urn:Field>
         <urn:Field name="API KEY">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiTGtQNmNTZHdvQiIsInZlcnNpb24iOiIxMC4wLjAuOSJ9..s917eIO1LlSEG3brwTNpBQ.hOVYvV3-S9tlWI1pykqpMw.PM5TkLt0XTqkmDCIwV4hdQ</urn:Field>
     </urn:Fields>
-    <urn:AdvancedFields/>
+    <urn:AdvancedFields>
+        <urn:Field name="Allow dummy code">true</urn:Field>
+    </urn:AdvancedFields>
     <urn:Tables/>
     <urn:ExtendedContractAttributes/>
     <urn:UniqueKeyField>smsUsername</urn:UniqueKeyField>
