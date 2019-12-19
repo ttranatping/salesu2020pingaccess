@@ -18,7 +18,7 @@
 				<div class="row align-center medium-unstack">
 					<div class="medium-5 large-4 column">
 						<div class="card-user-profile">
-							<img class="card-user-profile-img" src="./assets/consent/background.png" alt="picture of space">
+							<img class="card-user-profile-img" src="./assets/consent/transfer.png" alt="picture of space">
 							<div class="card-user-profile-content card-section">
 								<div class="card-user-profile-avatar">
 									<img src="./assets/consent/logo.jpg" alt="picture of yeti">
