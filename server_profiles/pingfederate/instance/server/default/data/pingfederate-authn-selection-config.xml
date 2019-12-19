@@ -13,22 +13,12 @@
                         <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
                     </urn:AstChild>
                     <urn:AstChild context="Success">
-                        <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <urn:AuthnSourceKey type="ADAPTER">pingidAdapter</urn:AuthnSourceKey>
-                            <urn:fallbackToSuccess>true</urn:fallbackToSuccess>
-                            <urn:InputIdMapping Type="Adapter" AttributeSourceId="htmlFormAdapterAdministrators" Value="entryUUID"/>
-                        </urn:AstAction>
-                        <urn:AstChild context="Fail">
-                            <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-                        </urn:AstChild>
-                        <urn:AstChild context="Success">
-                            <urn:AstAction apcId="TkNJ3HMIIvIeeZEM" xsi:type="urn:ApcMappingActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                                <urn:AttributeMapping>
-                                    <urn1:AttributeMap Name="subject" Type="Adapter" AttributeSourceId="htmlFormAdapterAdministrators" Value="entryUUID" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
-                                    <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
-                                </urn:AttributeMapping>
-                            </urn:AstAction>
-                        </urn:AstChild>
+						<urn:AstAction apcId="TkNJ3HMIIvIeeZEM" xsi:type="urn:ApcMappingActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+							<urn:AttributeMapping>
+								<urn1:AttributeMap Name="subject" Type="Adapter" AttributeSourceId="htmlFormAdapterAdministrators" Value="entryUUID" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+								<urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+							</urn:AttributeMapping>
+						</urn:AstAction>
                     </urn:AstChild>
                 </urn:AstChild>
             </urn:AstRoot>
