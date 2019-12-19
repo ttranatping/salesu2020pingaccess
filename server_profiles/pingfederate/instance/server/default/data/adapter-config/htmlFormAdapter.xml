@@ -98,6 +98,7 @@
     <urn:ExtendedContractAttributes>
         <urn:AttributeName>entryUUID</urn:AttributeName>
         <urn:AttributeName>givenName</urn:AttributeName>
+        <urn:AttributeName>mobile</urn:AttributeName>
         <urn:AttributeName>sn</urn:AttributeName>
     </urn:ExtendedContractAttributes>
     <urn:UniqueKeyField>username</urn:UniqueKeyField>
@@ -105,6 +106,7 @@
         <urn1:AttributeMap Name="entryUUID" Type="Adapter" Value="entryUUID" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="policy.action" Type="Adapter" Value="policy.action" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="givenName" Type="Adapter" Value="givenName" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="mobile" Type="Text" Value="12345678910" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="sn" Type="Adapter" Value="sn" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="username" Type="Adapter" Value="username" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
