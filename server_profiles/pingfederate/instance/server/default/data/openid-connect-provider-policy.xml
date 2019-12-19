@@ -19,7 +19,7 @@
     <urn:ProviderPolicyGroup policyId="standardOIDCPolicy" idTokenLife="5" includeSriInIdToken="true" includeUserInfoInIdToken="true" includeSHashInIdToken="true" returnIdTokenOnRefreshGrant="true" policyName="standardOIDCPolicy" accessTokenManagerId="standardATM">
         <urn:UserInfoMapping>
             <urn1:AttributeMap Name="sub" Type="Token" Value="sub" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
-            <urn1:AttributeMap Name="payment_threshold" Type="LDAP" AttributeSourceId="ldap" Value="l" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+            <urn1:AttributeMap Name="payment_threshold" Type="LDAP" AttributeSourceId="ldap" Value="o" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
             <urn1:AttributeMap Name="given_name" Type="LDAP" AttributeSourceId="ldap" Value="givenName" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
             <urn1:AttributeMap Name="family_name" Type="LDAP" AttributeSourceId="ldap" Value="sn" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
             <urn1:AttributeMap Name="username" Type="LDAP" AttributeSourceId="ldap" Value="uid" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>

@@ -14,6 +14,13 @@
             <loc:parameter param-name="Unique ID Field" value="true"/>
             <loc:parameter param-name="Mask Log Values" value="false"/>
         </loc:field>
+        <loc:field type="TEXT" default-value="20000" id="max" label="Max Payment Amount">
+            <loc:appliesTo profile="true" registration="false"/>
+            <loc:parameter param-name="Read-Only" value="false"/>
+            <loc:parameter param-name="Required" value="false"/>
+            <loc:parameter param-name="Unique ID Field" value="false"/>
+            <loc:parameter param-name="Mask Log Values" value="false"/>
+        </loc:field>
     </loc:fields>
     <loc:email-verification-config emailVerificationEnabled="false" verifyEmailTemplateName="message-template-email-ownership-verification.html" emailVerificationSentTemplateName="local.identity.email.verification.sent.html" emailVerificationSuccessTemplateName="local.identity.email.verification.success.html" emailVerificationErrorTemplateName="local.identity.email.verification.error.html" otlTimeToLive="1440" verificationEmailField="" verificationStatusField="" notificationPublisherId=""/>
     <loc:profile-config templateName="local.identity.profile.html" deleteIdentityEnabled="false"/>
@@ -22,6 +29,7 @@
             <urn:Parameter Name="search_base" Value="ou=people,dc=saidbank,dc=com,dc=au" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
             <urn:Parameter Name="search_scope" Value="ONELEVEL_SCOPE" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
         </loc:DataSource>
+        <loc:Attribute fieldName="max" datastore-field="o"/>
         <loc:Attribute fieldName="threshold" datastore-field="l"/>
         <loc:Attribute fieldName="uniqueId" datastore-field="uid"/>
     </loc:datastore-mapping>
