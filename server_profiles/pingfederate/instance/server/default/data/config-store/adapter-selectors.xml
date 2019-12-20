@@ -4,6 +4,7 @@
         <con:item name="adminSelector">com.pingidentity.pf.selectors.ExtendedPropertyAuthnSelector</con:item>
         <con:item name="brand1Selector">com.pingidentity.pf.selectors.http.HTTPHeaderAdapterSelector</con:item>
         <con:item name="brand2Selector">com.pingidentity.pf.selectors.http.HTTPHeaderAdapterSelector</con:item>
+        <con:item name="pingaccessStepUp">com.pingidentity.pf.selectors.saml.SamlAuthnContextAdapterSelector</con:item>
     </con:map>
     <con:map name="adapter-selectors-parents"/>
 </con:config>

@@ -35,15 +35,16 @@
 								%>
 								
 								<%
+								String paymentMax = (request.getHeader("X-PAYMENTMAX") != null && !request.getHeader("X-PAYMENTMAX").isEmpty())?request.getHeader("X-PAYMENTMAX"):"20000";
+								
 								if(request.getHeader("X-ACR") !=null && request.getHeader("X-ACR").equalsIgnoreCase("2FA"))
 								{
 								%>
-									<p class="card-user-profile-info">You have performed strong authentication and can submit any amount</p>
+									<p class="card-user-profile-info">You have performed strong authentication and can submit any amount up to $<%=paymentMax%>.</p>
 								<%
 								}else
 								{
 									String paymentThreshold = (request.getHeader("X-PAYMENTTHRESHOLD") != null && !request.getHeader("X-PAYMENTTHRESHOLD").isEmpty())?request.getHeader("X-PAYMENTTHRESHOLD"):"1000";
-									String paymentMax = (request.getHeader("X-PAYMENTMAX") != null && !request.getHeader("X-PAYMENTMAX").isEmpty())?request.getHeader("X-PAYMENTMAX"):"20000";
 									
 								%>
 									<p class="card-user-profile-info">You have configured your payment threshold to be $<%=paymentThreshold%>. Anything above this will require stronger authentication. Your maximum amount is $<%=paymentMax%>.</p>
