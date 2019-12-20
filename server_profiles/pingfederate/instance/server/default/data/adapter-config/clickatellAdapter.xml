@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urn:AdapterConfiguration authnCtxClassRef="" isInheritAttributeSettings="false" isInheritAttributeMapping="false" maskOgnlValues="false" isInheritExtendedContractAttributes="false" name="CDR - SMS Verification" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
+<urn:AdapterConfiguration authnCtxClassRef="" isInheritAttributeSettings="false" isInheritAttributeMapping="false" maskOgnlValues="false" isInheritExtendedContractAttributes="false" name="General - SMS Verification" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
     <urn:Fields>
         <urn:Field name="Allowed Attempts">3</urn:Field>
-        <urn:Field name="API KEY">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiTGtQNmNTZHdvQiIsInZlcnNpb24iOiIxMC4wLjAuOSJ9..s917eIO1LlSEG3brwTNpBQ.hOVYvV3-S9tlWI1pykqpMw.PM5TkLt0XTqkmDCIwV4hdQ</urn:Field>
+        <urn:Field name="API KEY">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiTGtQNmNTZHdvQiIsInZlcnNpb24iOiIxMC4wLjAuOSJ9..9D3vUuxodnCR-yjvwHkosg.ZsZgzq6RSUstQMaZSKLIOQ.SWlTn26CRWWeKWKMeUs0Xw</urn:Field>
+        <urn:Field name="Allow dummy code">true</urn:Field>
     </urn:Fields>
     <urn:AdvancedFields>
         <urn:Field name="Allow dummy code">true</urn:Field>
