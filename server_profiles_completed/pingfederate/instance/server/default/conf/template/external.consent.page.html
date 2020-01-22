@@ -1,0 +1,199 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <base href="$CurrentPingFedBaseURL"/>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data request</title>
+	<link rel="icon" href="https://foundation.zurb.com/building-blocks/assets/consent/img/favicon/foundation-favicon.ico" type="image/x-icon">
+	<link href="assets/consent/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/consent/foundation.css">
+    <link rel="stylesheet" href="assets/consent/app.css">
+    <link rel="stylesheet" href="assets/consent/layout.css">
+    <link rel="stylesheet" href="assets/consent/card-user-profile.css">
+    <meta class="foundation-mq"></head>
+    <script type="text/javascript">
+            function postResponse(approvalState)
+            {
+                document.forms[0]['approved'].value=approvalState;
+                document.forms[0].submit();
+            }
+        </script>
+  </head>
+  <body>
+	<form method="post" action="$action">
+		<input type="hidden" name="check-user-approved-scope" value="true"/>
+    <div class="grid-container" style="max-width: 600px">
+		<div class="row align-center medium-unstack">
+			<div class="medium-5 large-4 column">
+				<div class="card-user-profile">
+					<img class="card-user-profile-img" src="./assets/consent/background.png" alt="picture of space">
+					<div class="card-user-profile-content card-section">
+						<div class="card-user-profile-avatar">
+							<img src="./assets/consent/logo.jpg" alt="picture of yeti">
+						</div>
+						<h1>Data request</h1>
+						<p class="card-user-profile-info">We need to collect and use the below information for 12 months. We will only use it to help you manage your budget for the financial year.</p>
+
+          				<div class="grid-x grid-padding-x">
+           					<div class="large-6 medium-6 cell">
+              					<div class="callout">
+                					<img src="./assets/consent/tick.png" width="20">&nbsp;<small>Accredited CDR Recipient</small>
+              					</div>
+            				</div>
+            				<div class="large-6 medium-6 cell">
+              					<div class="callout">
+                					<small>$adr</small>
+              					</div>
+            				</div>
+          				</div>
+						<h2>Data we need</h2>
+						<p class="card-user-profile-info">Please select the data you would like to share. The more you share the more accurately you can track your spending. We only ask for what we need.</p>
+					</div>
+          			<div class="grid-x grid-padding-x">
+            			<div class="large-12 cell">
+              				<div class="primary callout">
+              					<h3>Transaction details</h3>
+				  				<div class="switch-toggle-wrapper">
+									<div class="switch">
+					  					<input class="switch-input" id="chk_transactionDetails" type="checkbox" name="scopes" value="bank:transactions:read" checked>
+					  					<label class="switch-paddle" for="chk_transactionDetails">
+											<span class="show-for-sr">Transaction details</span>
+					  					</label>
+									</div>
+				  				</div>
+              					<hr/>
+                				<p><strong>Why we need it</strong></p>
+                				<p>This is so we can identify how much money you have been spending.</p>
+
+								<button class="button" type="button" data-toggle="example-dropdown1">Show full data list</button>
+
+								<div class="dropdown-pane right" id="example-dropdown1" data-dropdown>
+									<h4>Full data list</h4>
+									<ul>
+										<li>Incoming and outgoing transactions</li>
+										<li>Amounts</li>
+										<li>Dates</li>
+										<li>Descriptions of transactions</li>
+										<li>Who you’ve sent money to or received money from</li>
+									</ul>
+								</div>
+              				</div>
+            			</div>
+          			</div>
+          			<div class="grid-x grid-padding-x">
+            			<div class="large-12 cell">
+              				<div class="primary callout">
+              					<h3>Direct Debits and Scheduled Payments</h3>
+				  				<div class="switch-toggle-wrapper">
+									<div class="switch">
+					  					<input class="switch-input" id="chk_scheduledPayments" type="checkbox" name="scopes" value="bank:regular_payments:read" checked>
+					  					<label class="switch-paddle" for="chk_scheduledPayments">
+											<span class="show-for-sr">Scheduled Payments</span>
+					  					</label>
+									</div>
+				  				</div>
+              					<hr/>
+                				<p><strong>Why we need it</strong></p>
+                				<p>This is so we can identify the amount of regular payments you make.</p>
+
+								<button class="button" type="button" data-toggle="example-dropdown2">Show full data list</button>
+
+								<div class="dropdown-pane right" id="example-dropdown2" data-dropdown>
+									<h4>Full data list</h4>
+									<ul>
+										<li>Direct debits</li>
+										<li>Scheduled payments</li>
+									</ul>
+								</div>
+              				</div>
+            			</div>
+          			</div>
+          			<div class="grid-x grid-padding-x">
+            			<div class="large-12 cell">
+              				<div class=" callout">
+              					<p>Select the account from below that you would like to read account transactions from</p>
+
+								<div class="grid-x grid-padding-x">
+									<div class="large-2 medium-2 cell">
+										<div class="switch-toggle-wrapper">
+											<div class="switch">
+												<input class="switch-input" id="chk_accounts_accounta" type="checkbox" name="accounts" value="accounta" checked>
+												<label class="switch-paddle" for="chk_accounts_accounta">
+													<span class="show-for-sr">Account A</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="large-6 medium-6 cell">
+										<div class="primary ">
+											<p>Account A</p>
+										</div>
+									</div>
+								</div>
+              					<hr/>
+								<div class="grid-x grid-padding-x">
+									<div class="large-2 medium-2 cell">
+										<div class="switch-toggle-wrapper">
+											<div class="switch">
+												<input class="switch-input" id="chk_accounts_accountb" type="checkbox" name="accounts" value="accountb" checked>
+												<label class="switch-paddle" for="chk_accounts_accountb">
+													<span class="show-for-sr">Account B</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="large-6 medium-6 cell">
+										<div class="primary ">
+											<p>Account B</p>
+										</div>
+									</div>
+								</div>
+              					<hr/>
+								<div class="grid-x grid-padding-x">
+									<div class="large-2 medium-2 cell">
+										<div class="switch-toggle-wrapper">
+											<div class="switch">
+												<input class="switch-input" id="chk_accounts_accountc" type="checkbox" name="accounts" value="accountc" checked>
+												<label class="switch-paddle" for="chk_accounts_accountc">
+													<span class="show-for-sr">Account C</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="large-6 medium-6 cell">
+										<div class="primary ">
+											<p>Account C</p>
+										</div>
+									</div>
+								</div>
+              				</div>
+            			</div>
+          			</div>
+
+					<h2>Key dates</h2>
+					
+					<p class="card-user-profile-info"><strong>Sharing period</strong></p>
+					<p class="card-user-profile-info">$startdate - $enddate</p>
+					<p class="card-user-profile-info"><strong>How often we'll access your data</strong></p>
+					<p class="card-user-profile-info">We will do this every time you log into BudgetGuide’s Budget Tracker. This will be on-going for the next 12 months.</p>
+					
+					<h3>Do you consent to share this data with us?</h3>
+					<p>Selecting &quot;I consent&quot; won't give us access to your data just yet. We will need to connect you with your bank to confirm the decision.</p>
+
+					<div class="card-user-profile-actions">
+						<a onclick="postResponse('deny');" class="card-user-profile-button button hollow secondary">I don't consent</a>
+						<a onclick="postResponse('allow');" class="card-user-profile-button button hollow">I consent</a>
+					</div>
+				</div>
+			</div>
+		</div>
+  	</div>
+
+	<script src="./assets/consent/card-user-profile.js"></script>
+		<input type="hidden" name="cSRFToken" value="$cSRFToken"/>
+		<input type="hidden" name="approved" value=""/>
+	</form>
+  </body>
+</html>

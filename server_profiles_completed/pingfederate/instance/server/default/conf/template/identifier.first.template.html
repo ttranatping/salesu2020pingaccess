@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <base href="$CurrentPingFedBaseURL"/>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data request</title>
+	<link rel="icon" href="https://foundation.zurb.com/building-blocks/assets/consent/img/favicon/foundation-favicon.ico" type="image/x-icon">
+	<link href="assets/consent/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/consent/foundation.css">
+    <link rel="stylesheet" href="assets/consent/app.css">
+    <link rel="stylesheet" href="assets/consent/layout.css">
+    <link rel="stylesheet" href="assets/consent/card-user-profile.css">
+    <meta class="foundation-mq"></head>
+  </head>
+  <body>
+	<form method="POST" action="$resume_url" autocomplete="off">
+		<input type="hidden" name="$ok" value="false"/>
+		<input type="hidden" name="$cancel" value="false"/>
+    <div class="grid-container" style="max-width: 600px">
+		<div class="row align-center medium-unstack">
+			<div class="medium-5 large-4 column">
+				<div class="card-user-profile">
+					<img class="card-user-profile-img" src="./assets/consent/background.png" alt="picture of space">
+					<div class="card-user-profile-content card-section">
+						<div class="card-user-profile-avatar">
+							<img src="./assets/consent/logo.jpg" alt="picture of yeti">
+						</div>
+						<h1>Connect to SaidBank</h1>
+						<p class="card-user-profile-info">Please provide your customer ID to connect <span id="adrname"></span> to SaidBank.</p>
+						<label>Customer ID
+    						<input id="identifierInput" type="text" size="36" name="$identifier" value="" autocorrect="off"
+                       autocapitalize="off" onKeyPress="return postOnReturn(event)"/>
+  						</label>
+  						
+					</div>
+					<div class="card-user-profile-actions">
+						<a onclick="postCancel();" class="card-user-profile-button button hollow secondary">Cancel</a>
+						<a onclick="postOk();" class="card-user-profile-button button hollow">Continue</a>
+					</div>
+				</div>
+			</div>
+		</div>
+  	</div>
+
+	<script type="text/javascript">
+
+		function postOk() {
+			document.forms[0]['$ok'].value = 'clicked';
+			document.forms[0].submit();
+		}
+		function postCancel() {
+			document.forms[0]['$cancel'].value = 'clicked';
+			document.forms[0].submit();
+		}
+
+	function postOnReturn(e)
+			{
+				var keycode;
+				if (window.event) keycode = window.event.keyCode;
+				else if (e) keycode = e.which;
+				else return true;
+
+				if (keycode == 13)
+				{
+					document.forms[0].submit();
+					return false;
+				}
+				else
+					return true;
+			 }
+	</script>
+	<script src="./assets/consent/card-user-profile.js"></script>
+		<input type="hidden" name="cSRFToken" value="$cSRFToken"/>
+		<input type="hidden" name="approved" value=""/>
+	</form>
+  </body>
+</html>
