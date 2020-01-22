@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urn:AuthnSelectionConfig lastModifiedMillis="1576822955499" enableAuthnSelection="true" enableSpAuthnSelection="false" failIfNoSelection="false" xmlns:urn="urn:pingidentity.com:pf:authn-selection">
+<urn:AuthnSelectionConfig lastModifiedMillis="1579661588942" enableAuthnSelection="true" enableSpAuthnSelection="false" failIfNoSelection="false" xmlns:urn="urn:pingidentity.com:pf:authn-selection">
     <urn:AuthnSelectionTrees>
         <urn:AuthnSelectionTree treeName="Administrative Functions" disabled="false" authnApiApp="">
             <urn:AstRoot context="">
@@ -23,7 +23,7 @@
                 </urn:AstChild>
             </urn:AstRoot>
         </urn:AuthnSelectionTree>
-        <urn:AuthnSelectionTree treeName="Brand 1 Bank Policy" disabled="false" authnApiApp="">
+        <urn:AuthnSelectionTree treeName="Brand 1 Bank Policy" disabled="true" authnApiApp="">
             <urn:AstRoot context="">
                 <urn:AstAction authnSelectorId="brand1Selector" xsi:type="urn:AuthnSelectorActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
                 <urn:AstChild context="No">
@@ -52,7 +52,7 @@
                 </urn:AstChild>
             </urn:AstRoot>
         </urn:AuthnSelectionTree>
-        <urn:AuthnSelectionTree treeName="Brand 1 Bank Step Up Policy" disabled="true" authnApiApp="">
+        <urn:AuthnSelectionTree treeName="Brand 1 Bank Step Up Policy" disabled="false" authnApiApp="">
             <urn:AstRoot context="">
                 <urn:AstAction authnSelectorId="brand1Selector" xsi:type="urn:AuthnSelectorActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
                 <urn:AstChild context="No">
