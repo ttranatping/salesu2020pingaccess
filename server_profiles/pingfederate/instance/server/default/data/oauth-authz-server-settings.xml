@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urn:OAuthConfig enableOAuth="true" authzCodeLength="30" authzCodeTimeout="60" rollRefreshTokens="false" rollingInterval="0" refreshTokenLength="42" atmIdForOAuthGrantManagement="" scopeForOAuthGrantManagement="" globalPersistentGrantExpirationTime="-1" globalPersistentGrantExpirationTimeUnit="d" globalPersistentGrantIdleTimeout="30" globalPersistentGrantIdleTimeoutTimeUnit="d" tokenEndpointBaseUrl="" userAuthzUrl="" registeredAuthzPath="" pendingAuthzTimeout="600" bypassActivationCodeConfirmation="false" devicePollingInterval="5" authzConsentSetting="INTERNAL" xmlns:urn="urn:pingidentity.com:pf:oauth:conf">
+<urn:OAuthConfig enableOAuth="true" authzCodeLength="30" authzCodeTimeout="60" rollRefreshTokens="false" rollingInterval="0" refreshTokenLength="42" atmIdForOAuthGrantManagement="" scopeForOAuthGrantManagement="" globalPersistentGrantExpirationTime="-1" globalPersistentGrantExpirationTimeUnit="d" globalPersistentGrantIdleTimeout="30" globalPersistentGrantIdleTimeoutTimeUnit="d" tokenEndpointBaseUrl="" userAuthzUrl="" registeredAuthzPath="" pendingAuthzTimeout="600" bypassActivationCodeConfirmation="false" devicePollingInterval="5" authzConsentSetting="" externalConsentAdapterId="" returnedScopeAttributeName="" xmlns:urn="urn:pingidentity.com:pf:oauth:conf">
     <urn:UserKeyToAccessTokenMapping contextId="authz_req|apc.TkNJ3HMIIvIeeZEM" tokenManagerId="adminATM">
         <urn1:AttributeMap Name="sub" Type="Persistent Grant" Value="USER_KEY" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
@@ -17,21 +17,27 @@
     <urn:ApcToUserKeyMapping sourcePluginId="XuvwoW2wD0xQDSe2">
         <urn1:AttributeMap Name="APPROVED_SCOPES" Type="Expression" Value="null" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="SELECTED_ACCOUNTS" Type="Expression" Value="null" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="CLAIMS_IDTOKEN" Type="Expression" Value="null" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="USER_NAME" Type="Authentication Policy Contract" Value="subject" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="CLAIMS_USERINFO" Type="Expression" Value="null" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="USER_KEY" Type="Authentication Policy Contract" Value="subject" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
     </urn:ApcToUserKeyMapping>
     <urn:ApcToUserKeyMapping sourcePluginId="TkNJ3HMIIvIeeZEM">
         <urn1:AttributeMap Name="APPROVED_SCOPES" Type="Context" Value="context.OAuthScopes" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="SELECTED_ACCOUNTS" Type="Expression" Value="null" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="CLAIMS_IDTOKEN" Type="Expression" Value="null" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="USER_NAME" Type="Authentication Policy Contract" Value="subject" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="CLAIMS_USERINFO" Type="Expression" Value="null" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="USER_KEY" Type="Authentication Policy Contract" Value="subject" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
     </urn:ApcToUserKeyMapping>
     <urn:ApcToUserKeyMapping sourcePluginId="iQwSYDdExcmJaYk6">
         <urn1:AttributeMap Name="APPROVED_SCOPES" Type="Expression" Value="#scopeCollection = #this.get(&quot;scopes&quot;).getValuesAsCollection(),  #joinedString = @java.lang.String@join(&quot; &quot;, #scopeCollection),  #joinedString" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="SELECTED_ACCOUNTS" Type="Authentication Policy Contract" Value="accounts" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="CLAIMS_IDTOKEN" Type="Authentication Policy Contract" Value="claims_idtoken" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="USER_NAME" Type="Authentication Policy Contract" Value="subject" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="CLAIMS_USERINFO" Type="Authentication Policy Contract" Value="claims_userinfo" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="USER_KEY" Type="Authentication Policy Contract" Value="subject" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
     </urn:ApcToUserKeyMapping>
@@ -45,5 +51,7 @@
     <urn:ReuseExistingPersistentGrantForGrant>authorization_code</urn:ReuseExistingPersistentGrantForGrant>
     <urn:persistentGrantAttributes AttributeName="APPROVED_SCOPES"/>
     <urn:persistentGrantAttributes AttributeName="SELECTED_ACCOUNTS"/>
+    <urn:persistentGrantAttributes AttributeName="CLAIMS_USERINFO"/>
+    <urn:persistentGrantAttributes AttributeName="CLAIMS_IDTOKEN"/>
     <urn:allowedOrigins>https://dir.pingapac.com</urn:allowedOrigins>
 </urn:OAuthConfig>
